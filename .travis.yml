@@ -13,5 +13,7 @@ matrix:
     - dist: xenial
       python: "3.7"
       env: TOXENV=flake8
+before_install:
+  - sudo apt-get install -y rpm  # needed by PyPI package rpm-py-installer
 install: pip install tox-travis coveralls
 script: tox
