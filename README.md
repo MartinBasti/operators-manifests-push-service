@@ -22,6 +22,10 @@ class ProdConfig:
     LOG_LEVEL = "INFO"
     LOG_FORMAT = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
     DEFAULT_RELEASE_VERSION = "1.0.0"  # default operator manifest version
+
+    # configuration of Koji URLs
+    KOJIHUB_URL = 'https://koji.fedoraproject.org/kojihub'
+    KOJIROOT_URL = 'https://kojipkgs.fedoraproject.org/'
 ```
 
 ## Running service
